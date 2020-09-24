@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Meu site de viagens</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+	<header>
+		<!--Menu superior de navegação-->
+		<nav>
+			<ul>
+				<li>
+					<a href="#sobre">Conheça a empresa</a>
+				</li>
+				<li>
+					<a href="#servicos">Serviços</a>
+				</li>
+				<li>
+					<a href="#lugares">Lugares</a>
+				</li>
+				<li>
+					<a href="#mapa">Venha nos visitar</a>
+				</li>
+				<li>
+					<a href="#faleConosco">Fale conosco</a>
+				</li>
+
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<!--Menu lateral-->
+		<ul id="menuRedes">
+		<li><a href="https://www.instagram.com/wild_flareon"> <img src="img/insta.png"></a>
+		<li><a href="https://br.linkedin.com/in/jf-lopes"> <img src="img/linke.png"></a>
+		</ul>
+		<!--Sobre o site-->
+		<section>
+			<h2 id="sobre">Conheça a empresa</h2>
+			<p class="introducao">Uma agência de viagens é uma empresa privada que trabalha como intermediária entre seus clientes e determinados prestadores de serviços turísticos (Empresas aéreas, hotéis, cruzeiros…), com o objetivo de vender produtos e serviços relacionados com essas viagens a um preço e com determinadas condições especialmente atrativas em relação com as que se poderia conseguir ao dirigir-se diretamente a esses provedores. <br>
+			A companhia britânica Cox & Kings, criada em 1758, é a agência de viagem mais antiga do mundo e Thomas Cook um de seus mais notáveis pioneiros, por seu planejamento desde 1841 de excursões religiosas em grupo. Em qualquer caso, as agências de viagem se desenvolveram, sobretudo, a partir dos anos 1920, com o desenvolvimento da aviação comercial.</p>
+		</section>
+		<!--Box de serviços-->
+		<section>
+			<h2 id="servicos">Seviços</h2>
+			<div>
+				<ul class="servicos">
+					<li>
+						<img src="img/cafe.png"><br>
+						Café da manhã
+					</li>
+					<li>
+						<img src="img/wifi.png"><br>
+						Wifi
+					</li>
+					<li>
+						<img src="img/limpeza.png"><br>
+						Serviço de limpeza
+					</li>
+					<li>
+						<img src="img/quarto.png"><br>
+						Serviço de quarto
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- Box (que era para ser responsiva) de imagens-->
+		<section>
+			<h2 id="lugares">Lugares</h2>
+				<div>	
+					<ul class="lugares">
+						<li>
+							<img class="imgResponsiva" src="https://www.viajali.com.br/wp-content/uploads/2018/05/paisagens-bonitas-1.jpg">
+						</li>
+						<li>
+							<img class="back" src="https://www.viajali.com.br/wp-content/uploads/2018/05/paisagens-bonitas-2.jpg">
+						</li>
+						<li>
+							<img class="imgResponsiva" src="https://www.viajali.com.br/wp-content/uploads/2018/05/paisagens-bonitas-3.jpg">
+						</li>
+						<li>
+							<img class="imgResponsiva" src="https://www.viajali.com.br/wp-content/uploads/2018/05/paisagens-bonitas-4.jpg">
+						</li>
+						<li>
+							<img class="imgResponsiva" src="https://www.viajali.com.br/wp-content/uploads/2018/05/paisagens-bonitas-6.jpg">
+						</li>
+						<li>
+							<img class="imgResponsiva" src="https://www.viajali.com.br/wp-content/uploads/2018/05/paisagens-bonitas-7.jpg">
+						</li>
+					</ul>
+				</div>
+			</section>
+		<!-- Mapa de localização-->
+		<section>
+			<div class="mapa">
+				<h2 id="mapa">Venha nos visitar</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.5540500092325!2d-50.31574088506374!3d-21.249525385879156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9496157aebf1a10d%3A0x62e75a1db69a1e82!2sIFSP%20-%20Instituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%2C%20Campus%20Birigui!5e0!3m2!1spt-BR!2sbr!4v1600807076441!5m2!1spt-BR!2sbr" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</section>
+		<!--Form do fale conosco-->
+		<section>
+			<div>	
+				<h2 id="faleConosco">Fale conosco</h2>
+				<form>
+		        	<label for="nomeSobrenome">Nome e sobrenome</label>
+		        	<input type="text" id="nomeSobrenome" autocomplete="on"  class="inputPadrao" required>
+		        
+		        	<label for="email">Email</label>
+		        	<input type="email" id="email" autocomplete="on" class="inputPadrao" required placeholder="seuemail@dominio.com.br">
+		        
+		        	<label for="telefone">Telefone</label>
+		        	<input type="tel" id="telefone" autocomplete="on"  class="inputPadrao" required placeholder="(XX) XXXXX-XXXX">
+
+		        	<label for="mensagem">Mensagem</label>
+		        	<textarea cols="70" rows="10" id="mensagem" class="inputPadrao" required></textarea>
+
+		        	<fieldset>
+		          	<legend>Como prefere o nosso contato?</legend>
+		          	<label for="radioEmail"><input type="radio" name="contato" value="email" id="radioEmail">Email</label>
+		          
+		          	<label for="radioTelefone"><input type="radio" name="contato" value="email" id="radioTelefone">Telefone</label>
+		          
+		          	<label for="radioWhatsapp"><input type="radio" name="contato" value="whatsapp" id="radioWhatsapp" checked>Whatsapp</label>
+		        	</fieldset>
+	        
+		        	<label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+		        	<input type="submit" value="Enviar o formulário" class="enviar">
+		     	</form>
+			</div>
+		</section>
+	</main>
+	<!--Rodapé-->
+	<footer>
+		<p class="copyright">Todos os direitos reservados &copy;</p>
+	</footer>
+</body>
+</html>
